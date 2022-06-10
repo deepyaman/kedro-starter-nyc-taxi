@@ -12,3 +12,17 @@ raw_yellow_data:
   type: pandas.CSVDataSet
   filepath: data/01_raw/yellowTaxiData.csv
   layer: raw
+
+merged_data:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/merged_data.csv
+  save_args:
+    index: True
+  layer: primary
+
+transformed_data:
+  type: pandas.CSVDataSet
+  filepath: data/05_model_input/transformed_data.csv
+  save_args:
+    index: True
+  layer: model input
