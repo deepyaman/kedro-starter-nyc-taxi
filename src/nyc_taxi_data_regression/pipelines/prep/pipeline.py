@@ -9,7 +9,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             node(
                 func=prep,
                 inputs=["raw_green_data", "raw_yellow_data"],
-                outputs=["prep_green_data", "prep_yellow_data", "merged_data"],
+                outputs=["output_green", "output_yellow", "merged_data"],
                 name="PrepTaxiData",
             )
         ]

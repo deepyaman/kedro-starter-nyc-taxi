@@ -13,6 +13,20 @@ raw_yellow_data:
   filepath: data/01_raw/yellowTaxiData.csv
   layer: raw
 
+output_green:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/green_prep_data.csv
+  save_args:
+    index: True
+  layer: primary
+
+output_yellow:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/yellow_prep_data.csv
+  save_args:
+    index: True
+  layer: primary
+
 merged_data:
   type: pandas.CSVDataSet
   filepath: data/03_primary/merged_data.csv
