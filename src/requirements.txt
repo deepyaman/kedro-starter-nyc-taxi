@@ -14,3 +14,7 @@ pytest~=6.2
 
 # Additional requirements from micro-package `prep`:
 kedro[pandas.CSVDataSet]~=0.16
+
+
+# Additional requirements from micro-package `transform`:
+kedro[pandas.CSVDataSet]~=0.16
