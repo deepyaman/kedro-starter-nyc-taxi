@@ -40,3 +40,16 @@ transformed_data:
   save_args:
     index: True
   layer: model input
+
+test_data:
+  type: pandas.CSVDataSet
+  filepath: data/05_model_input/test_data.csv
+  save_args:
+    index: True
+  layer: model input
+
+model_output:
+  type: kedro_mlflow.io.models.MlflowModelSaverDataSet
+  filepath: data/06_models/model
+  flavor: mlflow.sklearn
+  layer: models

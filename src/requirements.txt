@@ -18,3 +18,9 @@ kedro[pandas.CSVDataSet]~=0.16
 
 # Additional requirements from micro-package `transform`:
 kedro[pandas.CSVDataSet]~=0.16
+
+
+# Additional requirements from micro-package `train`:
+kedro[pandas.CSVDataSet]~=0.16
+kedro-mlflow~=0.4
+scikit-learn>=0.22.1
